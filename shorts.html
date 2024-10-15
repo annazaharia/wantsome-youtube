@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube-shorts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/shorts.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/labels.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/file-shorts.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="m-icons simple">menu</i>
+        <div class="logo-image">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="yt-logo-red-updated-svg_yt18"
+            class="external-icon"
+            viewBox="0 0 97 20"
+            style="width: 100%; pointer-events: none; display: inherit"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <svg
+              class="youtube-logo"
+              viewBox="0 0 97 20"
+              preserveAspectRatio="xMidYMid meet"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <path
+                  d="M27.9704 3.12324C27.6411 1.89323 26.6745 0.926623 25.4445 0.597366C23.2173 2.24288e-07 14.2827 0 14.2827 0C14.2827 0 5.34807 2.24288e-07 3.12088 0.597366C1.89323 0.926623 0.924271 1.89323 0.595014 3.12324C-2.8036e-07 5.35042 0 10 0 10C0 10 -1.57002e-06 14.6496 0.597364 16.8768C0.926621 18.1068 1.89323 19.0734 3.12324 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6769 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9704 3.12324Z"
+                  fill="#FF0000"
+                ></path>
+                <path
+                  d="M11.4275 14.2854L18.8475 10.0004L11.4275 5.71533V14.2854Z"
+                  fill="white"
+                ></path>
+              </g>
+              <g id="youtube-red-paths_yt18">
+                <path
+                  d="M40.0566 6.34524V7.03668C40.0566 10.4915 38.5255 12.5118 35.1742 12.5118H34.6638V18.5583H31.9263V1.42285H35.414C38.6078 1.42285 40.0566 2.7728 40.0566 6.34524ZM37.1779 6.59218C37.1779 4.09924 36.7287 3.50658 35.1765 3.50658H34.6662V10.4727H35.1365C36.6064 10.4727 37.1803 9.40968 37.1803 7.10253L37.1779 6.59218Z"
+                ></path>
+                <path
+                  d="M46.5336 5.8345L46.3901 9.08238C45.2259 8.83779 44.264 9.02123 43.836 9.77382V18.5579H41.1196V6.0391H43.2857L43.5303 8.75312H43.6337C43.9183 6.77288 44.8379 5.771 46.0232 5.771C46.1949 5.7757 46.3666 5.79687 46.5336 5.8345Z"
+                ></path>
+                <path
+                  d="M49.6567 13.2456V13.8782C49.6567 16.0842 49.779 16.8415 50.7198 16.8415C51.6182 16.8415 51.8228 16.1501 51.8439 14.7178L54.2734 14.8613C54.4568 17.5565 53.0481 18.763 50.6586 18.763C47.7588 18.763 46.9004 16.8627 46.9004 13.4126V11.223C46.9004 7.58707 47.8599 5.80908 50.7409 5.80908C53.6407 5.80908 54.3769 7.32131 54.3769 11.0984V13.2456H49.6567ZM49.6567 10.6703V11.5687H51.7193V10.675C51.7193 8.37258 51.5547 7.71172 50.6821 7.71172C49.8096 7.71172 49.6567 8.38669 49.6567 10.675V10.6703Z"
+                ></path>
+                <path
+                  d="M68.4103 9.09902V18.5557H65.5928V9.30834C65.5928 8.28764 65.327 7.77729 64.7132 7.77729C64.2216 7.77729 63.7724 8.06186 63.4667 8.59338C63.4832 8.76271 63.4902 8.93439 63.4879 9.10373V18.5605H60.668V9.30834C60.668 8.28764 60.4022 7.77729 59.7884 7.77729C59.2969 7.77729 58.8665 8.06186 58.5631 8.57456V18.5628H55.7456V6.03929H57.9728L58.2221 7.63383H58.2621C58.8947 6.42969 59.9178 5.77588 61.1219 5.77588C62.3072 5.77588 62.9799 6.36854 63.288 7.43157C63.9418 6.34973 64.9225 5.77588 66.0443 5.77588C67.7564 5.77588 68.4103 7.00119 68.4103 9.09902Z"
+                ></path>
+                <path
+                  d="M69.8191 2.8338C69.8191 1.4862 70.3106 1.09814 71.3501 1.09814C72.4132 1.09814 72.8812 1.54734 72.8812 2.8338C72.8812 4.22373 72.4108 4.57181 71.3501 4.57181C70.3106 4.56945 69.8191 4.22138 69.8191 2.8338ZM69.9837 6.03935H72.6789V18.5629H69.9837V6.03935Z"
+                ></path>
+                <path
+                  d="M81.891 6.03955V18.5631H79.6849L79.4403 17.032H79.3792C78.7466 18.2573 77.827 18.7677 76.684 18.7677C75.0095 18.7677 74.2522 17.7046 74.2522 15.3975V6.0419H77.0697V15.2352C77.0697 16.3382 77.3002 16.7874 77.867 16.7874C78.3844 16.7663 78.8477 16.4582 79.0688 15.9902V6.0419H81.891V6.03955Z"
+                ></path>
+                <path
+                  d="M96.1901 9.09893V18.5557H93.3726V9.30825C93.3726 8.28755 93.1068 7.7772 92.493 7.7772C92.0015 7.7772 91.5523 8.06177 91.2465 8.59329C91.263 8.76027 91.2701 8.9296 91.2677 9.09893V18.5557H88.4502V9.30825C88.4502 8.28755 88.1845 7.7772 87.5706 7.7772C87.0791 7.7772 86.6487 8.06177 86.3453 8.57447V18.5627H83.5278V6.0392H85.7527L85.9973 7.63139H86.0372C86.6699 6.42725 87.6929 5.77344 88.8971 5.77344C90.0824 5.77344 90.755 6.3661 91.0631 7.42913C91.7169 6.34729 92.6976 5.77344 93.8194 5.77344C95.541 5.77579 96.1901 7.0011 96.1901 9.09893Z"
+                ></path>
+                <path
+                  d="M40.0566 6.34524V7.03668C40.0566 10.4915 38.5255 12.5118 35.1742 12.5118H34.6638V18.5583H31.9263V1.42285H35.414C38.6078 1.42285 40.0566 2.7728 40.0566 6.34524ZM37.1779 6.59218C37.1779 4.09924 36.7287 3.50658 35.1765 3.50658H34.6662V10.4727H35.1365C36.6064 10.4727 37.1803 9.40968 37.1803 7.10253L37.1779 6.59218Z"
+                ></path>
+              </g>
+            </svg>
+          </svg>
+        </div>
+      </div>
+      <div class="search">
+        <div class="input-search">
+          <input type="search" name="search" placeholder="Cauta" />
+          <i class="m-icons keyboard">keyboard</i>
+          <button class="search-icon">
+            <i class="m-icons">search</i>
+          </button>
+        </div>
+        <button class="icon">
+          <div class="m-icons">mic</div>
+        </button>
+      </div>
+      <div class="user-area">
+        <i class="m-icons simple">video_call</i>
+        <i class="m-icons simple">notifications</i>
+        <img src="#" alt="" class="profile-picture" />
+      </div>
+    </header>
+    <main>
+      <div class="sidebar">
+        <div class="sidebar-item">
+          <i class="m-icons">home</i>
+          <a href="file:///C:/Users/eugen/Desktop/wantsome-youtube/index.html"
+            ><p>Acasa</p></a
+          >
+        </div>
+        <div class="sidebar-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="24"
+            height="24"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <defs></defs>
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 29.722 90.007 c -1.789 0 -3.588 -0.266 -5.35 -0.802 c -4.689 -1.426 -8.552 -4.587 -10.878 -8.903 c -4.518 -8.409 -1.74 -18.991 6.323 -24.094 c 1.283 -0.667 2.48 -1.35 3.715 -2.079 c -1.047 -0.614 -2.045 -1.189 -3.07 -1.762 c -4.949 -2.859 -7.99 -6.861 -8.806 -11.582 c -1.085 -6.409 -1.087 -14.509 8.599 -20.335 c 7.856 -4.696 15.914 -9.297 23.707 -13.747 c 2.584 -1.475 5.169 -2.951 7.753 -4.435 c 5.097 -2.903 11.394 -3.018 16.853 -0.307 c 5.51 2.736 9.263 7.886 10.04 13.776 c 1.131 7.532 -2.631 15.056 -9.362 18.704 c -1 0.565 -1.958 1.122 -2.892 1.679 c 0.212 0.126 0.42 0.252 0.626 0.376 c 0.733 0.442 1.44 0.867 2.162 1.275 c 5.543 3.12 9.042 8.417 9.599 14.53 c 0.549 6.04 -1.894 11.799 -6.702 15.8 c -1.545 1.256 -3.291 2.239 -4.979 3.191 c -0.5 0.281 -0.999 0.563 -1.492 0.851 c -7.995 4.658 -17.48 10.163 -27.21 15.667 C 35.654 89.268 32.703 90.007 29.722 90.007 z M 60.329 2.007 c -2.663 0 -5.287 0.667 -7.622 1.997 c -2.583 1.483 -5.169 2.96 -7.754 4.435 c -7.785 4.446 -15.834 9.042 -23.67 13.726 c -6.839 4.113 -9.129 9.581 -7.657 18.282 c 0.899 5.198 4.75 8.406 7.823 10.18 c 1.49 0.833 2.931 1.675 4.553 2.636 c 0.303 0.18 0.489 0.506 0.49 0.857 c 0.001 0.353 -0.184 0.68 -0.486 0.86 c -1.806 1.083 -3.444 2.054 -5.196 2.96 c -7.105 4.5 -9.579 13.925 -5.556 21.412 c 2.073 3.847 5.518 6.666 9.699 7.938 c 4.185 1.272 8.603 0.833 12.438 -1.231 c 9.702 -5.489 19.18 -10.99 27.169 -15.645 c 0.502 -0.292 1.01 -0.578 1.519 -0.864 c 1.615 -0.91 3.285 -1.851 4.69 -2.993 c 4.286 -3.567 6.47 -8.7 5.981 -14.075 c -0.495 -5.448 -3.626 -10.175 -8.589 -12.969 c -0.74 -0.418 -1.462 -0.853 -2.212 -1.304 c -0.648 -0.391 -1.318 -0.794 -2.042 -1.211 c -0.305 -0.176 -0.495 -0.5 -0.5 -0.852 c -0.005 -0.352 0.176 -0.681 0.476 -0.866 c 1.405 -0.865 2.843 -1.712 4.396 -2.589 c 6.009 -3.257 9.359 -9.955 8.35 -16.675 c -0.692 -5.246 -4.037 -9.824 -8.95 -12.264 C 65.331 2.588 62.813 2.007 60.329 2.007 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: white;
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 36.55 59.249 c -0.172 0 -0.345 -0.045 -0.5 -0.134 c -0.31 -0.179 -0.501 -0.509 -0.501 -0.866 V 32.127 c 0 -0.357 0.19 -0.687 0.5 -0.866 c 0.308 -0.179 0.69 -0.179 1 0 l 22.595 13.031 c 0.309 0.178 0.5 0.508 0.5 0.865 s -0.189 0.687 -0.499 0.867 l -22.594 13.09 C 36.897 59.204 36.724 59.249 36.55 59.249 z M 37.55 33.858 v 22.655 L 57.147 45.16 L 37.55 33.858 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: white;
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+          <p>Shorts</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">subscriptions</i>
+          <p>Abonamente</p>
+        </div>
+        <div class="sidebar-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="24"
+            height="24"
+            viewBox="0 0 50 50"
+          >
+            <path
+              style="fill: white"
+              d="M 25 3.0449219 C 12.886152 3.0449219 3.0449219 12.886152 3.0449219 25 C 3.0449219 37.113848 12.886152 46.955078 25 46.955078 C 37.113848 46.955078 46.955078 37.113848 46.955078 25 C 46.955078 12.886152 37.113848 3.0449219 25 3.0449219 z M 25 4.9550781 C 36.082152 4.9550781 45.044922 13.917848 45.044922 25 C 45.044922 36.082152 36.082152 45.044922 25 45.044922 C 13.917848 45.044922 4.9550781 36.082152 4.9550781 25 C 4.9550781 13.917848 13.917848 4.9550781 25 4.9550781 z M 25 11 C 17.27961 11 11 17.27961 11 25 C 11 32.72039 17.27961 39 25 39 C 32.72039 39 39 32.72039 39 25 C 39 17.27961 32.72039 11 25 11 z M 25 13 C 31.63961 13 37 18.36039 37 25 C 37 31.63961 31.63961 37 25 37 C 18.36039 37 13 31.63961 13 25 C 13 18.36039 18.36039 13 25 13 z M 21.033203 17.5 A 1.0001 1.0001 0 0 0 20 18.5 L 20 31.5 A 1.0001 1.0001 0 0 0 21.507812 32.361328 L 32.507812 25.861328 A 1.0001 1.0001 0 0 0 32.507812 24.138672 L 21.507812 17.638672 A 1.0001 1.0001 0 0 0 21.033203 17.5 z M 22 20.251953 L 30.035156 25 L 22 29.748047 L 22 20.251953 z"
+            ></path>
+          </svg>
+          <p>YouTube Music</p>
+        </div>
+        <hr />
+        <div class="sidebar-item">
+          <p>Tu</p>
+          <i class="m-icons">chevron_right</i>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">manage_accounts</i>
+          <p>Canalul tau</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">history</i>
+          <p>Istoric</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">playlist_play</i>
+          <p>Playlisturi</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">smart_display</i>
+          <p>Videoclipurile tale</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">schedule</i>
+          <p>Vizioneaza mai tarziu</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">thumb_up</i>
+          <p>Videoclipuri apreciate</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">arrow_downward</i>
+          <p>Continut descarcat</p>
+        </div>
+        <hr />
+        <div class="sidebar-item">
+          <p>Abonamente</p>
+        </div>
+        <div class="sidebar-subscriptions">
+          <img
+            class="img-subscription"
+            src="https://yt3.googleusercontent.com/x83sE3HaY3YKfrBRscvVX2kZa_mKwMwdxCkp54G0c2HSBiM-Lzo6LULAkBUhoFy_ogNIccQkpFE=s160-c-k-c0x00ffffff-no-rj"
+          />
+          <p>Utilaj Expert</p>
+        </div>
+        <div class="sidebar-subscriptions">
+          <img
+            class="img-subscription"
+            src="https://yt3.googleusercontent.com/eEaxl7NopogXCiaod5Z1IEYxOGuXPdpZGdBg5Z03Id9QKkNCHS733sRD7988nt3vd2j-OenHew=s160-c-k-c0x00ffffff-no-rj"
+          />
+          <p>JamilaCuisine</p>
+        </div>
+        <div class="sidebar-subscriptions">
+          <img
+            class="img-subscription"
+            src="https://yt3.googleusercontent.com/ytc/AIdro_lrnw9xyzZYIuaFSVC7ELA9aHCrvjRASQPoeTNhoS8tFg=s160-c-k-c0x00ffffff-no-rj"
+          />
+          <p>Roberta's Gym</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">keyboard_arrow_down</i>
+          <p>Afiseaza mai multe</p>
+        </div>
+        <div class="sidebar-item">
+          <p>Exploreaza</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">where_to_vote</i>
+          <p>Tendinte</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">music_note</i>
+          <p>Muzica</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">stadia_controller</i>
+          <p>Jocuri</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">emoji_events</i>
+          <p>Sport</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">podcasts</i>
+          <p>Podcasturi</p>
+        </div>
+        <hr />
+        <div class="sidebar-item">
+          <p>Mai multe de la YouTube</p>
+        </div>
+        <div class="sidebar-item">
+          <svg
+            viewBox="0 -38 256 256"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid"
+            fill="#000000"
+            width="24"
+            height="24"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M250.346231,28.0746923 C247.358133,17.0320558 238.732098,8.40602109 227.689461,5.41792308 C207.823743,0 127.868333,0 127.868333,0 C127.868333,0 47.9129229,0.164179487 28.0472049,5.58210256 C17.0045684,8.57020058 8.37853373,17.1962353 5.39043571,28.2388718 C-0.618533519,63.5374615 -2.94988224,117.322662 5.5546152,151.209308 C8.54271322,162.251944 17.1687479,170.877979 28.2113844,173.866077 C48.0771024,179.284 128.032513,179.284 128.032513,179.284 C128.032513,179.284 207.987923,179.284 227.853641,173.866077 C238.896277,170.877979 247.522312,162.251944 250.51041,151.209308 C256.847738,115.861464 258.801474,62.1091 250.346231,28.0746923 Z"
+                  fill="#FF0000"
+                ></path>
+                <polygon
+                  fill="#FFFFFF"
+                  points="102.420513 128.06 168.749025 89.642 102.420513 51.224"
+                ></polygon>
+              </g>
+            </g>
+          </svg>
+          <p>YouTube Premium</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">podcasts</i>
+          <p>YouTube Studio</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">podcasts</i>
+          <p>YouTube Music</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">podcasts</i>
+          <p>YouTube Kids</p>
+        </div>
+        <hr />
+        <div class="sidebar-item">
+          <i class="m-icons">settings</i>
+          <p>Setari</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">flag</i>
+          <p>Istoricul raportarilor</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">help</i>
+          <p>Ajutor</p>
+        </div>
+        <div class="sidebar-item">
+          <i class="m-icons">feedback</i>
+          <p>Trimite feedback</p>
+        </div>
+        <hr />
+        <div class="about">
+          <p>Despre Presa</p>
+          <p>Drepturi de autor</p>
+          <p>Contacteaza-ne Creatori</p>
+          <p>Publicitate Dezvoltatori</p>
+          <br />
+          <p>Conditii Confidentialitate</p>
+          <p>Politica si siguranta</p>
+          <p>Cum functioneaza YouTube</p>
+          <p>Testeaza functii noi</p>
+          <br />
+          <br />
+          <p><i>&#64; 2024 Google LLC</i></p>
+        </div>
+      </div>
+
+      <section>
+        <div class="align-videos">
+          <div class="middle-video">
+            <div class="icon-image">
+              <i class="m-icons">pause</i>
+              <div class="volume-control">
+                <i class="m-icons">volume_off</i>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  class="volume-slider"
+                />
+              </div>
+            </div>
+            <div class="middle-image">
+              <img
+                src="https://i0.wp.com/picjumbo.com/wp-content/uploads/silhouette-of-a-guy-with-a-cap-at-red-sky-sunset-free-image.jpeg?h=800&quality=80"
+                alt="Video image"
+              />
+            </div>
+            <div class="overlay">
+              <div class="overlay-row">
+                <div class="profile-image">
+                  <img
+                    src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="name">@AI image</div>
+                <button>Abonează-te</button>
+              </div>
+              <div class="title">
+                Images, generative art and generated photos
+              </div>
+            </div>
+          </div>
+          <div class="icons-right">
+            <div class="icon-group">
+              <i class="m-icons">thumb_up</i>
+              <p>3,3 K</p>
+            </div>
+            <div class="icon-group">
+              <i class="m-icons">thumb_down</i>
+              <p>Nu ...</p>
+            </div>
+            <div class="icon-group">
+              <i class="m-icons">comment</i>
+              <p>74</p>
+            </div>
+            <div class="icon-group">
+              <i class="m-icons">forward</i>
+              <p>Trimite</p>
+            </div>
+            <div class="icon-group">
+              <i class="m-icons">more_vert</i>
+              <img
+                src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+                alt="Channel image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="navigation">
+        <i class="m-icons navigation-icons">arrow_upward</i>
+        <i class="m-icons navigation-icons">arrow_downward</i>
+      </div>
+    </main>
+  </body>
+</html>

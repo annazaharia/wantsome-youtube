@@ -1,0 +1,52 @@
+@use "./mixins/flex";
+
+.main-section {
+  width: 1400px;
+  min-width: 1400px;
+  height: 100vh;
+}
+
+.secondary-section {
+  width: 500px;
+  min-width: 500px;
+  height: 100vh;
+}
+.video-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.icon-bottom-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+
+  .icon-left,
+  .icon-right {
+    display: flex;
+    align-items: center;
+
+    i.m-icons {
+      margin-right: 5px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .icon-right {
+    justify-content: flex-end;
+
+    i.m-icons {
+      margin-left: 5px;
+      margin-right: 0;
+    }
+  }
+}
