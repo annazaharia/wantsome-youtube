@@ -98,30 +98,229 @@
     </header>
     <main>
       <div class="main-section">
-        <img
-          class="video-image"
-          src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg"
-          alt="Video image"
-        />
-        <div class="icon-bottom-img">
-          <div class="icon-left">
-            <i class="m-icons">play_arrow</i>
-            <i class="m-icons">skip_next</i>
-            <i class="m-icons">volume_up</i>
-            <p>0:00 / 46:31</p>
+        <div class="video-player">
+          <div class="video-spinner">
+            <span class="loader"></span>
           </div>
-          <div class="icon-right">
-            <i class="m-icons">volume_down</i>
-            <i class="m-icons">keyboard</i>
-            <i class="m-icons">settings</i>
-            <i class="m-icons">branding_watermark</i>
-            <i class="m-icons">computer</i>
-            <i class="m-icons">cast</i>
-            <i class="m-icons">fullscreen</i>
+          <div class="video-caption">
+            <div class="caption-overlay"></div>
+            <img
+              src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg"
+              alt="Video image"
+            />
+          </div>
+          <div class="video-actions">
+            <div class="video-progress">
+              <div class="progress-bar"></div>
+            </div>
+
+            <div class="controls">
+              <div class="icon-left">
+                <i class="m-icons">play_arrow</i>
+                <i class="m-icons">skip_next</i>
+                <i class="m-icons">volume_up</i>
+                <p>0:00 / 46:31</p>
+              </div>
+              <div class="icon-right">
+                <i class="m-icons">volume_down</i>
+                <i class="m-icons">keyboard</i>
+                <i class="m-icons">settings</i>
+                <i class="m-icons">branding_watermark</i>
+                <i class="m-icons">computer</i>
+                <i class="m-icons">cast</i>
+                <i class="m-icons">fullscreen</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-details">
+          <div class="video-title">
+            <h1>How to create a website using HTML and CSS</h1>
+          </div>
+          <div class="video-info">
+            <div class="channel-profile-image">
+              <img
+                src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+                alt=""
+              />
+            </div>
+            <div class="channel-name">
+              <h2>BOBONETE</h2>
+              <p>317 K de abonati</p>
+            </div>
+            <div class="channel-buttons">
+              <button>Abonează-te</button>
+              <div class="icon-group">
+                <i class="m-icons">thumb_up</i>
+                <p>3,3 K</p>
+              </div>
+              <div class="icon-group">
+                <i class="m-icons">thumb_down</i>
+              </div>
+              <div class="icon-group">
+                <i class="m-icons">forward</i>
+                <p>Trimite</p>
+              </div>
+              <div class="icon-group">
+                <i class="m-icons">more_vert</i>
+              </div>
+            </div>
+          </div>
+          <div class="video-description">
+            <p>282 K de vizionari acum 4 zile</p>
+            <p>Devino membrum al canalului BOBONETE</p>
+          </div>
+        </div>
+        <div class="comments-section">
+          <h3>1.204 comentarii</h3>
+
+          <div class="comment-input">
+            <img
+              src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+              alt="User Avatar"
+              class="avatar"
+            />
+            <textarea placeholder="Adauga un comment..."></textarea>
+            <div class="comment-actions">
+              <button class="cancel-btn">Anuleaza</button>
+              <button class="comment-btn">Comenteza</button>
+            </div>
+          </div>
+
+          <div class="comment-list">
+            <div class="comment">
+              <img
+                src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+                alt="User Avatar"
+                class="avatar"
+              />
+              <div class="comment-details">
+                <div class="comment-header">
+                  <span class="username">Gigi</span>
+                  <span class="time">acum 2 ore</span>
+                </div>
+                <p class="comment-text">
+                  This is a great video! Thanks for sharing.
+                </p>
+                <div class="comment-actions">
+                  <button class="like-btn">👍 23</button>
+                  <button class="reply-btn">Reply</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="comment">
+              <img
+                src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
+                alt="User Avatar"
+                class="avatar"
+              />
+              <div class="comment-details">
+                <div class="comment-header">
+                  <span class="username">Ioana</span>
+                  <span class="time">acum 5 ore</span>
+                </div>
+                <p class="comment-text">
+                  Very informative content. I learned a lot.
+                </p>
+                <div class="comment-actions">
+                  <button class="like-btn">👍 15</button>
+                  <button class="reply-btn">Reply</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="secondary-section"></div>
+      <div class="sidebar">
+        <button class="sidebar-active">
+          Afiseaza redarea din nou a chatului
+        </button>
+        <div class="sidebar-actions">
+          <button>Totate</button>
+          <button>De la DA BRAVO!</button>
+          <button>Similare</button>
+        </div>
+        <h2>Shorts</h2>
+        <div class="shorts-list">
+          <div class="short">
+            <img
+              src="https://burst.shopifycdn.com/photos/lonely-fields-ice-water-snow-capped-mountains.jpg?width=1000&format=pjpg&exif=0&iptc=0"
+              alt="Short Thumbnail"
+            />
+            <p>Short 1</p>
+          </div>
+          <div class="short">
+            <img
+              src="https://burst.shopifycdn.com/photos/lonely-fields-ice-water-snow-capped-mountains.jpg?width=1000&format=pjpg&exif=0&iptc=0"
+              alt="Short Thumbnail"
+            />
+            <p>Short 2</p>
+          </div>
+          <div class="short">
+            <img
+              src="https://burst.shopifycdn.com/photos/lonely-fields-ice-water-snow-capped-mountains.jpg?width=1000&format=pjpg&exif=0&iptc=0"
+              alt="Short Thumbnail"
+            />
+            <p>Short 3</p>
+          </div>
+        </div>
+        <div class="suggestion">
+          <img
+            src="https://martech.org/wp-content/uploads/2014/08/video-tv3-ss-1920.jpg"
+            alt="Thumbnail"
+          />
+          <div class="info">
+            <h3>Dan Badea</h3>
+            <p>iUmor</p>
+            <span>1.2M vizionari • acum 3 zile</span>
+          </div>
+        </div>
+        <div class="suggestion">
+          <img
+            src="https://martech.org/wp-content/uploads/2014/08/video-tv3-ss-1920.jpg"
+            alt="Thumbnail"
+          />
+          <div class="info">
+            <h3>Dan Badea</h3>
+            <p>iUmor</p>
+            <span>1.2M vizionari • acum 3 zile</span>
+          </div>
+        </div>
+        <div class="suggestion">
+          <img
+            src="https://martech.org/wp-content/uploads/2014/08/video-tv3-ss-1920.jpg"
+            alt="Thumbnail"
+          />
+          <div class="info">
+            <h3>Dan Badea</h3>
+            <p>iUmor</p>
+            <span>1.2M vizionari • acum 3 zile</span>
+          </div>
+        </div>
+        <div class="suggestion">
+          <img
+            src="https://martech.org/wp-content/uploads/2014/08/video-tv3-ss-1920.jpg"
+            alt="Thumbnail"
+          />
+          <div class="info">
+            <h3>Dan Badea</h3>
+            <p>iUmor</p>
+            <span>1.2M vizionari • acum 3 zile</span>
+          </div>
+        </div>
+        <div class="suggestion">
+          <img
+            src="https://martech.org/wp-content/uploads/2014/08/video-tv3-ss-1920.jpg"
+            alt="Thumbnail"
+          />
+          <div class="info">
+            <h3>Dan Badea</h3>
+            <p>iUmor</p>
+            <span>1.2M vizionari • acum 3 zile</span>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
